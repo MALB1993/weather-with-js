@@ -72,42 +72,7 @@
     <!-- Body content goes here -->
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 mx-auto my-5 bg-light p-3 rounded-2">
-                <h3 id="name"></h3>
-                <!-- Button trigger modal -->
-                <div class="w-100 text-center">
-                    <button type="button" class="btn btn-outline-primary w-50" data-bs-toggle="modal" data-bs-target="#weatherModal">
-                        تغییر موقیت
-                    </button>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="weatherModal" tabindex="-1" aria-labelledby="weatherModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="weatherModalLabel">تعیین موقعیت مکانی برای نمایش آب وهوا</h1>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <label for="city">نام شهر</label>
-                                    <input type="text" name="city" id="city" class="form-control" placeholder="لطفا نام شهر مورد نظر را انتخاب کنید.">
-                                    <strong class="text-danger" id="error-message"></strong>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" id="submit-weather" class="btn btn-primary">ثبت اطلاعات</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <script type="module" src="./js/main.js"></script>
 </body>
