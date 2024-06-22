@@ -13,7 +13,7 @@ export default class Weather {
 
             // Check if the fetch operation was successful (status code 200-299)
             if (!response.ok) {
-                throw new Error('Network response was not ok'); // Throw an error if response status is not ok
+                console.error('Network response was not ok'); // Throw an error if response status is not ok
             }
 
             // Parse the JSON response from the API
@@ -23,7 +23,7 @@ export default class Weather {
             return data;
 
         } catch (error) {
-            console.error('There has been a problem with your fetch operation:', error); // Log any errors that occur during the fetch operation
+            console.error('There has been a problem with your fetch operation'); // Log any errors that occur during the fetch operation
         }
     }
 }
