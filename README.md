@@ -51,6 +51,16 @@ Replace `YOUR_API_KEY` in the `script.js` file with your actual API key.
 const apiKey = 'YOUR_API_KEY';
 ```
 
+### npm
+1. install npm
+```bash
+   npm install
+```
+2. run dev
+```bash
+   npm start
+```
+
 ## Technologies
 - HTML5
 - CSS3
