@@ -68,7 +68,7 @@
     <link rel="icon" href="https://yourweatherapp.com/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-secondary">
+<body class="bg-dark">
     <!-- Body content goes here -->
 
     <!-- Main container for the weather app content -->
@@ -81,13 +81,13 @@
                 <h1 class="text-center">
                     <span>City</span>
                     :
-                    <span id="city-name">Tehran</span>
+                    <span id="city-name"></span>
                 </h1>
 
                 <!-- Weather icon and description -->
                 <div>
                     <!-- Weather icon -->
-                    <img src="" alt="" width="50" height="50" id="image">
+                    <img id="image">
                     <!-- Weather description text -->
                     <p id="weather-description" class="text-center my-2">
                         light intensity drizzle
@@ -100,7 +100,7 @@
                     <div class="d-flex justify-content-between my-3">
                         <p>
                             <span>Temp :</span>
-                            <span id="temp">280.32</span>
+                            <span id="temp"></span>&deg;
                         </p>
                         <p>
                             <span>Pressure :</span>
@@ -122,19 +122,19 @@
                         </p>
                         <p class="col-md-6 col-sm-12 text-center">
                             <span>Temp max :</span>
-                            <span id="temp_max">281.15</span>
+                        <span id="temp_max">281.15</span>
                         </p>
                     </div>
                     <hr>
                     <!-- Row for wind speed and direction -->
                     <div class="row">
                         <p class="col-md-6 col-sm-12 text-center">
-                            <span>Speed</span>
-                            <span>4.1</span>
+                            <span>Speed :</span>
+                            <span id="speed"></span>
                         </p>
                         <p class="col-md-6 col-sm-12 text-center">
-                            <span>Deg</span>
-                            <span id="deg">80</span>
+                            <span>Deg :</span>
+                            <span id="deg"></span>
                         </p>
                     </div>
                 </div>
