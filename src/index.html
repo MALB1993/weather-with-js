@@ -1,5 +1,6 @@
+```html
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 
 <head>
     <!-- Character encoding for the document -->
@@ -68,13 +69,83 @@
     <link rel="icon" href="https://yourweatherapp.com/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-dark">
+<body class="bg-secondary">
     <!-- Body content goes here -->
 
+    <!-- Main container for the weather app content -->
+    <div class="container">
+        <!-- Row to contain the weather card -->
+        <div class="row">
+            <!-- Column for centering the weather card -->
+            <div class="col-md-6 border rounded-2 p-4 mx-auto my-4 bg-light" id="parent-weather">
+                <!-- Weather city name header -->
+                <h1 class="text-center">
+                    <span>City</span>
+                    :
+                    <span id="city-name">Tehran</span>
+                </h1>
 
-    
+                <!-- Weather icon and description -->
+                <div>
+                    <!-- Weather icon -->
+                    <img src="" alt="" width="50" height="50" id="image">
+                    <!-- Weather description text -->
+                    <p id="weather-description" class="text-center my-2">
+                        light intensity drizzle
+                    </p>
+                </div>
+                <hr>
+                <!-- Weather details including temperature, pressure, and humidity -->
+                <div>
+                    <!-- Flex container for temperature, pressure, and humidity -->
+                    <div class="d-flex justify-content-between my-3">
+                        <p>
+                            <span>Temp :</span>
+                            <span id="temp">280.32</span>
+                        </p>
+                        <p>
+                            <span>Pressure :</span>
+                            <span id="pressure">1012</span>
+                        </p>
+                        <p>
+                            <span>Humidity :</span>
+                            <span id="humidity">81</span>
+                        </p>
+                    </div>
 
+                    <hr>
+
+                    <!-- Row for minimum and maximum temperature -->
+                    <div class="row">
+                        <p class="col-md-6 col-sm-12 text-center">
+                            <span>Temp min :</span>
+                            <span id="temp_min">279.15</span>
+                        </p>
+                        <p class="col-md-6 col-sm-12 text-center">
+                            <span>Temp max :</span>
+                            <span id="temp_max">281.15</span>
+                        </p>
+                    </div>
+                    <hr>
+                    <!-- Row for wind speed and direction -->
+                    <div class="row">
+                        <p class="col-md-6 col-sm-12 text-center">
+                            <span>Speed</span>
+                            <span>4.1</span>
+                        </p>
+                        <p class="col-md-6 col-sm-12 text-center">
+                            <span>Deg</span>
+                            <span id="deg">80</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript module for the weather app -->
     <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
+```
