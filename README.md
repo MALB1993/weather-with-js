@@ -56,9 +56,24 @@ const apiKey = 'YOUR_API_KEY';
 ```bash
    npm install
 ```
-2. run dev
+- Development
 ```bash
-   npm start
+   npm run dev
+```
+if you change port go to package.json line-7 => scripts => dev
+"dev": "vite --port=YOUR_PORT",
+
+```bash
+   http://localhost:3000
+```
+
+-Build Project
+```bash
+   npm run build
+```
+-Preview
+```bash
+   npm run preview
 ```
 
 ## Technologies
