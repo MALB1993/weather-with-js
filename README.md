@@ -60,7 +60,7 @@ const apiKey = 'YOUR_API_KEY';
 ```bash
    npm run dev
 ```
-if you change port go to package.json line-7 => scripts => dev
+if you want change port goto package.json line-7 => scripts => dev
 "dev": "vite --port=YOUR_PORT",
 
 ```bash
