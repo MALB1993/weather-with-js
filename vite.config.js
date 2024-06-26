@@ -1,11 +1,16 @@
-import { resolve } from 'path'
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
-export default {
-  root: resolve(__dirname, 'src'),
-  build: {
-    outDir: '../dist'
-  },
-  server: {
-    port: 8080
-  }
-}
+/** @type {import('vite').UserConfig} */
+export default defineConfig({
+    build: {
+        outDir: "./dist",
+        rollupOptions: {
+            input: resolve(__dirname, 'index.html'),
+        },
+    },
+    server: {
+        port: 3000,
+        open: true
+    },
+});

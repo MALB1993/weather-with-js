@@ -1,7 +1,7 @@
 // Importing styles and libraries
 import '../scss/styles.scss'; // Importing SCSS styles
-import $ from 'jquery'; // Importing jQuery library (optional)
-import * as bootstrap from 'bootstrap'; // Importing Bootstrap if needed (optional)
+import 'jquery'; // Importing jQuery library (optional)
+import 'bootstrap'; // Importing Bootstrap if needed (optional)
 
 // Importing local modules
 import Weather from './Weather'; // Importing Weather class from Weather.js
